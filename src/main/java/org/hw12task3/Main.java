@@ -6,7 +6,12 @@ public class Main {
         Operation add = (a, b) -> a + b;
         Operation sub = (a, b) -> a - b;
         Operation mul = (a, b) -> a * b;
-        Operation div = (a, b) -> (double) a / b;
+
+        Operation div = (a, b) -> {
+            if (b == 0) throw new IllegalArgumentException("Division by zero!");
+            return (double) a / b;
+        };
+
         Operation pow = (a, b) -> Math.pow(a, b);
         Operation nRoot = (a, b) -> Math.round(Math.pow(a, (double) 1 / b));
 

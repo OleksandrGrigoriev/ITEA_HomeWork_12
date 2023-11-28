@@ -1,0 +1,14 @@
+USE mydb;
+CREATE TABLE Telephones (
+	person_name varchar(50),
+    telephone varchar(20)
+);
+CREATE TABLE Job_and_salary (
+	salary int,
+    job varchar(50)
+);
+CREATE TABLE Personal_info (
+	family varchar(150),
+    birth_date date,
+    address varchar(150)
+);

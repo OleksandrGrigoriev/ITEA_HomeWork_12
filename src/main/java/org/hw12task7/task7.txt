@@ -1,0 +1,9 @@
+INSERT INTO personal_info
+VALUES (1, "not married", "12 october 1988", "Ukraine, Kiev, Shevchenka str., 31-43");
+
+........
+........
+
+UPDATE personal_info
+SET family="married"
+WHERE id=1;

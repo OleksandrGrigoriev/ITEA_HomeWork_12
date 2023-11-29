@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS cars;
+
+USE cars;
+
+CREATE TABLE carinfo (
+	id INT NOT NULL AUTO_INCREMENT,
+    brand VARCHAR(30),
+	model VARCHAR(30),
+	engine_vol INT,
+	price INT,
+    max_speed INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO carinfo
+VALUES (1, "BMW", "X5", 3.5, 60000, 300);
+
+INSERT INTO carinfo
+VALUES (2, "Mercedes-Benz", "320", 3.2, 40000, 280);
+
+INSERT INTO carinfo
+VALUES (3, "Mazda", "RX8", 3.0, 30000, 250);
+
+INSERT INTO carinfo
+VALUES (4, "VolsWagen", "Touareg", 3.5, 60000, 320);
+
+INSERT INTO carinfo
+VALUES (5, "Ford", "Falcon", 3.0, 55000, 270);

@@ -1,0 +1,2 @@
+SELECT * FROM job_and_salary
+WHERE salary>10000;
